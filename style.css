@@ -31,3 +31,19 @@ body{
 .bg-success, .bg-danger{
     color: white !important;
 }
+
+.width-100{ /* generische style, die man für mehrere Sachen verwenden kann, die 100% breite haben sollen*/
+    width: 100%;
+    height: 100%;
+    
+}
+
+.text-center{
+    text-align: center;
+}
+
+.trophy-headline{
+    font-size: 38px;
+    margin-bottom: 32px;
+}
+
