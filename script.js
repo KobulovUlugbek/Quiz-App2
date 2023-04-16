@@ -70,6 +70,7 @@ let currentQuestion = 0;
 
 let audio_success = new Audio('audio/success.mp3');
 let audio_wrong = new Audio('audio/wrong.mp3');
+let audio_restart = new Audio('audio/restart.mp3');
 
 function init() {
   document.getElementById("all_questions").innerHTML = questions.length;
@@ -124,10 +125,12 @@ function answer(selection) {
 
   if (selectionQuestionNumber == question["right_answer"]) {
     document.getElementById(selection).parentNode.classList.add("bg-success");
+    audio_success.play();
     rigthQuestions++; // wenn man richtig auf der Frage beantwortet dann rightQuestions ++;
   } else {
     document.getElementById(selection).parentNode.classList.add("bg-danger");
     document.getElementById(idRightAnswer).parentNode.classList.add("bg-success");
+    audio_wrong.play();
   }
 
   document.getElementById("next-button").disabled = false;
@@ -157,6 +160,7 @@ function restartGame(){
   document.getElementById('header-image').src = 'img/pencil.jpg';
   document.getElementById("questionBody").style =  ''; // question body wieder anzeigen
   document.getElementById("endScreen").style = "display: none"; // endscreen ausblenden
+  audio_restart.play();
   rigthQuestions = 0;
   currentQuestion = 0;
   init(); // um Spiel erneut zu laden
