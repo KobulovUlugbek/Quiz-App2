@@ -8,60 +8,60 @@ let questions = [
     right_answer: 3
   },
   {
-    question: "Wer?",
-    answer_1: "Robbie Williams",
-    answer_2: "Lady Gaga",
-    answer_3: "Tim Berner-Lee",
-    answer_4: "Justin Bieber",
+    question: "Wie heißt der Erfinder von JavaScript?",
+    answer_1: "Douglas Crockford",
+    answer_2: "Brendan Eich",
+    answer_3: "John Resig",
+    answer_4: "Steve Jobs",
     right_answer: 2
   },
   {
-    question: "erfunden?",
-    answer_1: "Robbie Williams",
-    answer_2: "Lady Gaga",
-    answer_3: "Tim Berner-Lee",
-    answer_4: "Justin Bieber",
+    question: "Wie lautete der Mädchenname von JavaScript kurz nach ihrer Geburt?",
+    answer_1: "Micha",
+    answer_2: "Mocha",
+    answer_3: "Mecha",
+    answer_4: "Macha",
+    right_answer: 2
+  },
+  {
+    question: "Was ist false?",
+    answer_1: "Number.MIN_VALUE * -2 === -Infinity",
+    answer_2: "Number.MAX_VALUE * 2 === Infinity",
+    answer_3: "1/0 === Infinity",
+    answer_4: "Number.POSITIVE_INFINITY === Infinity",
     right_answer: 1
   },
   {
-    question: "Wer hat HTML erfunden?",
-    answer_1: "Robbie Williams",
-    answer_2: "Lady Gaga",
-    answer_3: "Tim Berner-Lee",
-    answer_4: "Justin Bieber",
-    right_answer: 3
+    question: "Welche der folgenden Sprachen hatte keinen Einfluss auf JS?",
+    answer_1: "Self",
+    answer_2: "Scheme",
+    answer_3: "Java",
+    answer_4: "Prolog",
+    right_answer: 4
   },
   {
-    question: "Wer hat HTML erfunden?",
-    answer_1: "Robbie Williams",
-    answer_2: "Lady Gaga",
-    answer_3: "Tim Berner-Lee",
-    answer_4: "Justin Bieber",
-    right_answer: 3
+    question: "Wer passt hier nicht in die Reihe?",
+    answer_1: "ActionScript",
+    answer_2: "JavaScript",
+    answer_3: "CoffeeScript",
+    answer_4: "AppleScript",
+    right_answer: 4
   },
   {
-    question: "Wer hat HTML erfunden?",
-    answer_1: "Robbie Williams",
-    answer_2: "Lady Gaga",
-    answer_3: "Tim Berner-Lee",
-    answer_4: "Justin Bieber",
-    right_answer: 3
+    question: "Was ist true?",
+    answer_1: "0 > null",
+    answer_2: "0 >= null",
+    answer_3: "0 >= undefined",
+    answer_4: "0 == undefined",
+    right_answer: 2
   },
   {
-    question: "Wer hat HTML erfunden?",
-    answer_1: "Robbie Williams",
-    answer_2: "Lady Gaga",
-    answer_3: "Tim Berner-Lee",
-    answer_4: "Justin Bieber",
-    right_answer: 3
-  },
-  {
-    question: "Wer hat HTML erfunden?",
-    answer_1: "Robbie Williams",
-    answer_2: "Lady Gaga",
-    answer_3: "Tim Berner-Lee",
-    answer_4: "Justin Bieber",
-    right_answer: 3
+    question: "Welche der folgenden Zuweisungen ist syntaktisch nicht korrekt?",
+    answer_1: "var a = &_0;",
+    answer_2: "var a = !!0;",
+    answer_3: "var a = π;",
+    answer_4: "var a = _$;",
+    right_answer: 1
   }
 ];
 
