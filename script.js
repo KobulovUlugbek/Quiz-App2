@@ -66,8 +66,10 @@ let questions = [
 ];
 
 let rigthQuestions = 0;
-
 let currentQuestion = 0;
+
+let audio_success = new Audio('audio/success.mp3');
+let audio_wrong = new Audio('audio/wrong.mp3');
 
 function init() {
   document.getElementById("all_questions").innerHTML = questions.length;
@@ -76,7 +78,7 @@ function init() {
 
 function showQuestion() {
   if (currentQuestion >= questions.length) {
-    //TODO: Show End Screen
+    // Show End Screen
     document.getElementById("endScreen").style = "";
     document.getElementById("questionBody").style = "display: none";
 
@@ -85,7 +87,19 @@ function showQuestion() {
 
     document.getElementById('header-image').src = 'img/trophy.png';
 
-  } else {
+  } else { // Show question
+
+    let percent = (currentQuestion+1) / questions.length; // um Prozent zu zeigen
+
+    percent = percent * 100; //
+
+    percent = percent.toFixed(1)
+
+    document.getElementById('progress-bar').innerHTML = `${percent} %`;
+    document.getElementById('progress-bar').style = `width: ${percent}%;`;
+
+    console.log('Forschritt', percent)
+
     let question = questions[currentQuestion];
 
     document.getElementById("question-number").innerHTML = currentQuestion + 1;
@@ -136,4 +150,14 @@ function resetAnswerButton() {
   document.getElementById("answer_3").parentNode.classList.remove("bg-success");
   document.getElementById("answer_4").parentNode.classList.remove("bg-danger");
   document.getElementById("answer_4").parentNode.classList.remove("bg-success");
+}
+
+
+function restartGame(){
+  document.getElementById('header-image').src = 'img/pencil.jpg';
+  document.getElementById("questionBody").style =  ''; // question body wieder anzeigen
+  document.getElementById("endScreen").style = "display: none"; // endscreen ausblenden
+  rigthQuestions = 0;
+  currentQuestion = 0;
+  init(); // um Spiel erneut zu laden
 }
